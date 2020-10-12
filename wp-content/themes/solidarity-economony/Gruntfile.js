@@ -113,8 +113,8 @@ module.exports = function(grunt) {
           },
           options: {
             style: "expanded",
-            sourcemap: "none",
-            lineNumbers: true
+            sourceMap: false,
+//            sourceComments: true
           }
         }
       },
