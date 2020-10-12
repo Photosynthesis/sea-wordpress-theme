@@ -4,6 +4,8 @@
   "description": "One Grunt setup - 28/02/19",
   "main": "index.js",
   "scripts": {
+    "build": "grunt build",
+    "dev": "grunt dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
