@@ -94,7 +94,7 @@ $map_url = get_field('map_url') . '?' . http_build_query($attributes, '', '&');
 
 .iframe-box-fullscreen{
   position: absolute;
-  top: 0;
+  /*top: 0;*/
   left: 0;
   z-index: 1000;
 }
@@ -124,10 +124,15 @@ iframeControl.onclick = function(){
   if(iframeBox.className == "iframe-box-normal"){
     iframeBox.className = "iframe-box-fullscreen";
     iframeControl.className = "dashicons dashicons-fullscreen-exit-alt";
-    window.scrollTo(0,0);
+    document.body.style.overflow = "hidden";
+    iframeBox.style.top = window.pageYOffset+"px";
+    console.log("Yoffset: "+window.pageYOffset);
+    //window.scrollTo(0,0);
   }else{
     iframeBox.className = "iframe-box-normal";
     iframeControl.className = "dashicons dashicons-fullscreen-alt";
+    document.body.style.overflow = "auto";
+    iframeBox.style.top = "";
   }
 }
 </script>
