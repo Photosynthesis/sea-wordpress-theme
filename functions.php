@@ -224,6 +224,11 @@ function sea_admin_enqueue_scripts()
 }
 add_action('wp_admin_enqueue_scripts', 'sea_enqueue_scripts');
 
+function sea_load_dashicons_front_end() {
+  wp_enqueue_style( 'dashicons' );
+}
+add_action( 'wp_enqueue_scripts', 'sea_load_dashicons_front_end' );
+
 if (!function_exists('_one_log')) {
   function _one_log($message)
   {
