@@ -59,7 +59,13 @@ if (($logo = get_field('logo'))) {
   $attributes['logo'] = $logo;
 }
 
+$map_url = get_field('map_url') . '?' . http_build_query($attributes, '', '&');
+
 ?>
 
-<iframe src="<?= get_field('map_url') . '?' . http_build_query($attributes, '', '&'); ?>" style="width:100%; height: <?= (get_field('height') ?: '500') . 'px'; ?>"></iframe>
+<iframe src="<?= $map_url ?>" style="width:100%; height: <?= (get_field('height') ?: '500') . 'px'; ?>"></iframe>
 <div class="cover"></div>
+
+<div class="wp-block-buttons">
+  <div class="wp-block-button"><a class="wp-block-button__link" href="<?= $map_url ?>" target="_blank">View Map In Full-screen</a></div>
+</div>
