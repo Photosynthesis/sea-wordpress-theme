@@ -10,17 +10,17 @@
   <?php endwhile; ?>
 <?php endif; ?>
 
-<?php 
+<?php
 
 $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
 $args = array(
   'post_type'   => 'case_study',
-  'posts_per_page' => 4,
+  'posts_per_page' => get_field('case_studies_per_page','options'),
   'paged' => $paged
 );
- 
-$case_studies = new WP_Query( $args ); 
+
+$case_studies = new WP_Query( $args );
 
 ?>
 

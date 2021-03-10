@@ -40,6 +40,25 @@
             "append": "",
             "maxlength": ""
         }
+        {
+             "key": "field_60489b45230e1",
+             "label": "Case studies per page",
+             "name": "case_studies_per_page",
+             "type": "text",
+             "instructions": "Number of case studies\/stories to show in the template",
+             "required": 0,
+             "conditional_logic": 0,
+             "wrapper": {
+                 "width": "",
+                 "class": "",
+                 "id": ""
+             },
+             "default_value": 20,
+             "placeholder": "",
+             "prepend": "",
+             "append": "",
+             "maxlength": ""
+         }
     ],
     "location": [
         [

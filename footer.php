@@ -5,7 +5,7 @@
           <div class="socials">
             <?php while (have_rows('social', 'options')) : the_row(); ?>
             <div class="social">
-              <a href="<?= get_sub_field('social_page') ?>"><i class="<?= get_sub_field('icon') ?>"></i></a>
+              <a href="<?= get_sub_field('social_page') ?>"><span class="dashicons dashicons-<?= get_sub_field('icon') ?>"></span></a>
             </div>
             <?php endwhile; ?>
           </div>
