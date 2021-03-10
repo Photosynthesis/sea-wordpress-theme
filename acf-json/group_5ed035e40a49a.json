@@ -22,25 +22,6 @@
             "maxlength": ""
         },
         {
-            "key": "field_5ed210a15152d",
-            "label": "Font Awesome Kit",
-            "name": "font_awesome_kit",
-            "type": "text",
-            "instructions": "Go to <a href=\"https:\/\/fontawesome.com\/start\" target=\"_blank\">Font Awesome<\/a> and follow the instructions to create an account. Once set up, paste the 10-14 digit code in this field.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        }
-        {
              "key": "field_60489b45230e1",
              "label": "Case studies per page",
              "name": "case_studies_per_page",
