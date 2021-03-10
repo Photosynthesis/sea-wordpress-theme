@@ -87,14 +87,6 @@ function sea_setup_options()
 
   if (function_exists('acf_add_options_sub_page')) :
     acf_add_options_sub_page(array(
-      'title' => 'Header Options',
-      'parent' => 'options',
-      'capability' => 'manage_options'
-    ));
-  endif;
-
-  if (function_exists('acf_add_options_sub_page')) :
-    acf_add_options_sub_page(array(
       'title' => 'Site Options',
       'parent' => 'options',
       'capability' => 'manage_options'

@@ -16,10 +16,10 @@
           <?php endif; ?>
             <h1 class="title">
               <a class="nav-brand" href="<?php bloginfo('url'); ?>"><span id="nav-brand-image-wrap">
-              <?php 
+              <?php
                 $blog_name = get_bloginfo('name'); ?>
                 <?php sea_add_brand_image() ?></span>
-                <span class="site-name <?= get_theme_mod( 'brand_image_only' ) ? 'hide-text' : '' ?>"><?php echo $blog_name; ?></span>
+                <span class="site-name <?= get_theme_mod( 'display_brand_image_only' ) ? 'hide-text' : '' ?>"><?php echo $blog_name; ?></span>
               </a>
             </h1>
             <?php if( get_bloginfo('description') ): ?>
