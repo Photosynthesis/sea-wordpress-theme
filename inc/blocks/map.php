@@ -13,18 +13,12 @@ if (!get_field('show_datasets_panel')) {
 $initial_bounds = get_field('initial_bounds');
 
 if (isset($initial_bounds['lat_1']) && isset($initial_bounds['lat_2']) && isset($initial_bounds['lng_1']) && isset($initial_bounds['lng_2'])) {
-  $attributes['initialBounds'] = array(
-    array($initial_bounds['lat_1'], $initial_bounds['lng_1']),
-    array($initial_bounds['lat_2'], $initial_bounds['lng_2'])
-  );
+  $attributes['initialBounds'] = $initial_bounds['lat_1'].','. $initial_bounds['lng_1'].','.$initial_bounds['lat_2'].','.$initial_bounds['lng_2'];
 }
 
 $default_lat_lng = get_field('default_lat_lng');
 if ($default_lat_lng['lat'] && $default_lat_lng['lng']) {
-  $attributes['defaultLatLng'] = array(
-    $default_lat_lng['lat'],
-    $default_lat_lng['lng']
-  );
+  $attributes['defaultLatLng'] = $default_lat_lng['lat'].','.$default_lat_lng['lng'];
 }
 
 if (($filterable_fields = get_field('filterable_fields'))) {
@@ -126,8 +120,6 @@ iframeControl.onclick = function(){
     iframeControl.className = "dashicons dashicons-fullscreen-exit-alt";
     document.body.style.overflow = "hidden";
     iframeBox.style.top = window.pageYOffset+"px";
-    console.log("Yoffset: "+window.pageYOffset);
-    //window.scrollTo(0,0);
   }else{
     iframeBox.className = "iframe-box-normal";
     iframeControl.className = "dashicons dashicons-fullscreen-alt";
