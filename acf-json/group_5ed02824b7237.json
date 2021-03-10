@@ -3,82 +3,6 @@
     "title": "Footer options",
     "fields": [
         {
-            "key": "field_5ed028332aea6",
-            "label": "Main text",
-            "name": "main_text",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_5ed028682aea7",
-            "label": "Telephone number",
-            "name": "telephone_number",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5ed029fc2aeac",
-            "label": "Email address",
-            "name": "email_address",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5ed02ac52aead",
-            "label": "Address",
-            "name": "address",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": "wpautop"
-        },
-        {
             "key": "field_5ed2088dbaa4a",
             "label": "Social",
             "name": "social",
@@ -99,10 +23,10 @@
             "sub_fields": [
                 {
                     "key": "field_5ed2089ebaa4b",
-                    "label": "Social Page",
+                    "label": "Social Page URL",
                     "name": "social_page",
                     "type": "url",
-                    "instructions": "",
+                    "instructions": "Add the full URL of a social page to link to. Example: https:\/\/twitter.com\/yourtwittername",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -118,7 +42,7 @@
                     "label": "Icon",
                     "name": "icon",
                     "type": "text",
-                    "instructions": "Find an icon on <a href=\"https:\/\/fontawesome.com\/icons?d=gallery&m=free&s=brands\" target=\"_blank\">Font Awesome<\/a>, find the HTML at the top of the page and enter the text like this <b>fab fa-twitter<\/b> in this field. Other common icons are <b>fab fa-facebook-f<\/b> and <b>fab fa-instagram<\/b>.\r\n<br><br>\r\nThe Font Awesome Kit option in <a href=\"http:\/\/sea.local\/wp-admin\/admin.php?page=acf-options-site-options\">Site options<\/a> needs to be filled in for this to work.",
+                    "instructions": "Find an icon at <a href=\"https:\/\/developer.wordpress.org\/resource\/dashicons\/\" target=\"_blank\">Dashicons<\/a>. Copy the icon id (for example <b>dashicons-twitter<\/b>) into this field. Other common icons are <b>dashicons-facebook<\/b> and <b>dashicons-instagram<\/b>.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
